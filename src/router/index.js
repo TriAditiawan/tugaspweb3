@@ -12,9 +12,9 @@ const routes = [
   { path: '/about', name: 'about', component: AboutView }
 ]
 
-const router = createRouter({
-  history: createWebHistory(), // atau createWebHashHistory() kalau pakai hash mode
-  routes
+onst router = createRouter({
+  history: createWebHashHistory(), // pake hash supaya gh-pages aman
+  routes: [...]
 })
 
 export default router
