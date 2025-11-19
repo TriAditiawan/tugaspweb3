@@ -1,0 +1,143 @@
+/* =========================================
+   COLOR PALETTE — IMO Health Style
+   ========================================= */
+:root {
+  --purple-900: #210C39;   /* Deep violet */
+  --purple-700: #421B73;   /* Royal purple */
+  --purple-glow: #6D45DA;  /* Soft glow purple */
+  --green-neon: #2DF4A8;   /* For fancy CTA buttons */
+  --text-light: #ECE9FF;
+  --text-muted: #CFC7E8;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(https://triaditiawan.github.io/formlogin.github.io/Poppins-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+
+}
+/* =========================================
+   GLOBAL BACKGROUND
+   ========================================= */
+body {
+  background: radial-gradient(
+      circle at bottom left,
+      rgba(109, 69, 218, 0.35) 0%,
+      transparent 40%
+    ),
+    linear-gradient(
+      180deg,
+      var(--purple-900) 0%,
+      var(--purple-700) 60%,
+      var(--purple-900) 100%
+    );
+  min-height: 100vh;
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+/* =========================================
+   NAVBAR — Deep Purple Glass
+   ========================================= */
+.navbar {
+  background: rgba(33, 12, 57, 0.6); /* deep purple + transparency */
+  backdrop-filter: blur(10px);
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: var(--text-light) !important;
+  margin-left: 1rem;
+  opacity: 0.8;
+}
+
+.nav-link:hover,
+.router-link-active {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* =========================================
+   CARD — Modern Gradient + Soft Glass
+   ========================================= */
+.card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text-light);
+}
+
+/* =========================================
+   BUTTONS — CTA Green + Purple
+   ========================================= */
+.btn-primary {
+  background: var(--purple-glow);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #7f5cff;
+}
+
+.btn-success {
+  background: var(--green-neon);
+  border: none;
+  color: black;
+  font-weight: 600;
+}
+
+.btn-success:hover {
+  filter: brightness(1.1);
+}
+
+/* =========================================
+   TABLE — Clean White/Purple
+   ========================================= */
+.table thead th {
+  color: var(--text-light);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.table tbody td {
+  color: var(--text-muted);
+}
+
+/* =========================================
+   BADGES (Status)
+   ========================================= */
+.badge-aman {
+  background: #2DF4A8;
+  color: #000;
+}
+
+.badge-menipis {
+  background: #FFB84D;
+  color: #000;
+}
+
+.badge-kosong {
+  background: #FF5C5C;
+  color: #000;
+}
+
+/* =========================================
+   SMALL MUTED TEXT
+   ========================================= */
+.small-muted {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
