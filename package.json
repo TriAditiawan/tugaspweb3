@@ -3,10 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "dev:upload": "node server.js",
-    "dev:all": "concurrently \"npm run dev\" \"npm run dev:upload\""
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist""
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
